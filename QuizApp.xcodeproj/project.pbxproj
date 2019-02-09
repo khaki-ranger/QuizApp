@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1E48AF7220E7235009BC626 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E48AF6220E7235009BC626 /* QuestionViewController.swift */; };
+		D1E48AFA220E725C009BC626 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1E48AF9220E725C009BC626 /* AudioToolbox.framework */; };
 		D1FC2D08220C69D4006AF1BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FC2D07220C69D4006AF1BD /* AppDelegate.swift */; };
 		D1FC2D0A220C69D4006AF1BD /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FC2D09220C69D4006AF1BD /* StartViewController.swift */; };
 		D1FC2D0D220C69D4006AF1BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FC2D0B220C69D4006AF1BD /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1E48AF6220E7235009BC626 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		D1E48AF9220E725C009BC626 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D1FC2D04220C69D4006AF1BD /* QuizApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FC2D07220C69D4006AF1BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1FC2D09220C69D4006AF1BD /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -33,17 +37,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1E48AFA220E725C009BC626 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1E48AF8220E725C009BC626 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1E48AF9220E725C009BC626 /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1FC2CFB220C69D4006AF1BD = {
 			isa = PBXGroup;
 			children = (
 				D1FC2D06220C69D4006AF1BD /* QuizApp */,
 				D1FC2D05220C69D4006AF1BD /* Products */,
+				D1E48AF8220E725C009BC626 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +75,7 @@
 				D1FC2D07220C69D4006AF1BD /* AppDelegate.swift */,
 				D1FC2D1B220C75C8006AF1BD /* QuestionDataManager.swift */,
 				D1FC2D09220C69D4006AF1BD /* StartViewController.swift */,
+				D1E48AF6220E7235009BC626 /* QuestionViewController.swift */,
 				D1FC2D0B220C69D4006AF1BD /* Main.storyboard */,
 				D1FC2D0E220C69D6006AF1BD /* Assets.xcassets */,
 				D1FC2D10220C69D6006AF1BD /* LaunchScreen.storyboard */,
@@ -144,6 +159,7 @@
 			files = (
 				D1FC2D0A220C69D4006AF1BD /* StartViewController.swift in Sources */,
 				D1FC2D08220C69D4006AF1BD /* AppDelegate.swift in Sources */,
+				D1E48AF7220E7235009BC626 /* QuestionViewController.swift in Sources */,
 				D1FC2D1C220C75C8006AF1BD /* QuestionDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

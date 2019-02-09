@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="76" y="33"/>
         </scene>
-        <!--View Controller-->
+        <!--Question View Controller-->
         <scene sceneID="Oxc-89-thz">
             <objects>
-                <viewController storyboardIdentifier="question" id="Jdd-4f-CXB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="question" id="Jdd-4f-CXB" customClass="QuestionViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cfd-2l-Dez">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +85,9 @@
                                         <state key="normal" title="恐竜の化石">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer1Button:" destination="Jdd-4f-CXB" eventType="touchUpInside" id="ykI-4m-2IJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8bJ-WQ-EJ8">
                                         <rect key="frame" x="0.0" y="118" width="343" height="108.5"/>
@@ -93,6 +96,9 @@
                                         <state key="normal" title="スペースシャトル">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer2Button:" destination="Jdd-4f-CXB" eventType="touchUpInside" id="LdT-0D-aZK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wq1-LP-SZX">
                                         <rect key="frame" x="0.0" y="236.5" width="343" height="108"/>
@@ -101,6 +107,9 @@
                                         <state key="normal" title="タイムマシン">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer3Button:" destination="Jdd-4f-CXB" eventType="touchUpInside" id="nlf-FL-OFg"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7J-Bv-R66">
                                         <rect key="frame" x="0.0" y="354.5" width="343" height="108"/>
@@ -109,6 +118,9 @@
                                         <state key="normal" title="無人島">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapAnswer4Button:" destination="Jdd-4f-CXB" eventType="touchUpInside" id="DnN-ND-mIz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -137,10 +149,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jti-ub-5kS"/>
                     </view>
+                    <connections>
+                        <outlet property="answer1Button" destination="r6Y-Vs-o6A" id="O56-ds-DES"/>
+                        <outlet property="answer2Button" destination="8bJ-WQ-EJ8" id="4eP-Uz-8dU"/>
+                        <outlet property="answer3Button" destination="wq1-LP-SZX" id="Ikf-l3-dXe"/>
+                        <outlet property="answer4Button" destination="M7J-Bv-R66" id="Z1H-qv-CRj"/>
+                        <outlet property="correctImageView" destination="IYS-Kk-rFT" id="fYr-K4-RIy"/>
+                        <outlet property="incorrectImageView" destination="LJY-ME-cXo" id="iy7-bW-uxY"/>
+                        <outlet property="questionNoLabel" destination="5V2-77-iIC" id="hfv-X7-Tdp"/>
+                        <outlet property="questionTextView" destination="7mE-5q-e7j" id="sV9-Gv-oQc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NNN-DQ-FN4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="817" y="33"/>
+            <point key="canvasLocation" x="839" y="33"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fzj-ak-c4z">
