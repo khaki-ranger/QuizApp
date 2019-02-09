@@ -216,6 +216,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jle-Io-15D"/>
                     </view>
+                    <connections>
+                        <outlet property="correctPercentLabel" destination="06j-AQ-jum" id="zOU-F6-OkF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vrG-Lk-SCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Se2-fb-IjE" userLabel="Exit" sceneMemberID="exit"/>
